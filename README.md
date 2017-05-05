@@ -58,3 +58,12 @@ NASA Image and Video Library: [https://images.nasa.gov](https://images.nasa.gov)
 
 NASA’s citizen science projects: [https://science.nasa.gov/citizenscientists](https://science.nasa.gov/citizenscientists)
 
+## Team
+
+Valeria Aufiero
+Andrea Benedetti
+Lorenzo Bracco
+Elena Mongelli
+James Simonetta
+Alessandro Zotta
+
