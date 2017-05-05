@@ -2,6 +2,8 @@
 
 DEX is a mixed reality peer reviewed platform for indexing and discovering scientific knowledge. Explore the world, collect Knowledge Points and help others understand our planet with the power of crowdsourced based data gathering challenges!
 
+![DEX Project Image](https://api-2017.spaceappschallenge.org/team-photos/D-g_wlkkM3MZ4YTjgKsEAgzDH_g=/4995/width-800/)
+
 ## Challenge
 
 A creative way for the public and scientists alike to learn scientific & technical Earth-related terms.
