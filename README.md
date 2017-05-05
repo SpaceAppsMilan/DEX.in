@@ -48,7 +48,7 @@ We assembled a first prototype of how the app could work in the final product. Y
 
 Our working prototype showcases the potential of the mixed reality feature of DEX. The prototype allows you to take a picture, which is then live processed by the Google APIs, and returns text printed on screen detailing the recognized subject of the picture along with its description (automatically retrieved from Wikipedia), all of this with the form factor of the visual user interface showed in the video. Official code repository on GitHub: https://github.com/SpaceAppsMilan/DEX.in
 
-Head to the demo folder to see the application in action or dig into the code to know more about how it works!
+Head to the [demo folder](https://github.com/SpaceAppsMilan/DEX.in/tree/master/demo) to see the application in action or dig into the code to know more about how it works!
 
 ## Resources used
 
