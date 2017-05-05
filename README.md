@@ -2,7 +2,7 @@
 
 DEX is a mixed reality peer reviewed platform for indexing and discovering scientific knowledge. Explore the world, collect Knowledge Points and help others understand our planet with the power of crowdsourced based data gathering challenges!
 
-![DEX Project Image](https://api-2017.spaceappschallenge.org/team-photos/D-g_wlkkM3MZ4YTjgKsEAgzDH_g=/4995/width-800/)
+![DEX Project Image](https://api-2017.spaceappschallenge.org/team-photos/D-g_wlkkM3MZ4YTjgKsEAgzDH_g=/4995/width-800)
 
 ## Challenge
 
@@ -42,19 +42,19 @@ The user interface of DEX uses metaphors like paper and diaries to create a tact
 
 ### App Prototype
 
-We assembled a first prototype of how the app could work in the final product. You can explore all the app's core features, from the map, to the Explore page, down to the Discovery Diary where all progress is stored. Proto.io link: https://share.proto.io/RD4BR1/
+We assembled a first prototype of how the app could work in the final product. You can explore all the app's core features, from the map, to the Explore page, down to the Discovery Diary where all progress is stored. Proto.io link: [https://share.proto.io/RD4BR1](https://share.proto.io/RD4BR1).
 
 ### Computer Vision Prototype
 
-Our working prototype showcases the potential of the mixed reality feature of DEX. The prototype allows you to take a picture, which is then live processed by the Google APIs, and returns text printed on screen detailing the recognized subject of the picture along with its description (automatically retrieved from Wikipedia), all of this with the form factor of the visual user interface showed in the video. Official code repository on GitHub: https://github.com/SpaceAppsMilan/DEX.in
+Our working prototype showcases the potential of the mixed reality feature of DEX. The prototype allows you to take a picture, which is then live processed by the Google APIs, and returns text printed on screen detailing the recognized subject of the picture along with its description (automatically retrieved from Wikipedia), all of this with the form factor of the visual user interface showed in the video. Official code repository on GitHub: [https://github.com/SpaceAppsMilan/DEX.in](https://github.com/SpaceAppsMilan/DEX.in).
 
 Head to the [demo folder](https://github.com/SpaceAppsMilan/DEX.in/tree/master/demo) to see the application in action or dig into the code to know more about how it works!
 
 ## Resources used
 
-NASA Science site glossary: https://science.nasa.gov/glossary
+NASA Science site glossary: [https://science.nasa.gov/glossary](https://science.nasa.gov/glossary)
 
-NASA Image and Video Library: https://images.nasa.gov/
+NASA Image and Video Library: [https://images.nasa.gov](https://images.nasa.gov)
 
-NASA’s citizen science projects: https://science.nasa.gov/citizenscientists
+NASA’s citizen science projects: [https://science.nasa.gov/citizenscientists](https://science.nasa.gov/citizenscientists)
 
