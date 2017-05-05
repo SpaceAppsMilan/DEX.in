@@ -60,10 +60,10 @@ NASA’s citizen science projects: [https://science.nasa.gov/citizenscientists](
 
 ## Team
 
-Valeria Aufiero
-Andrea Benedetti
-Lorenzo Bracco
-Elena Mongelli
-James Simonetta
-Alessandro Zotta
+* Valeria Aufiero
+* Andrea Benedetti
+* Lorenzo Bracco
+* Elena Mongelli
+* James Simonetta
+* Alessandro Zotta
 
