@@ -48,10 +48,13 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.android.volley.*;
+
 import android.text.Html;
 
 import android.R.color;
 
+import com.android.volley.toolbox.StringRequest;
 import com.google.api.client.extensions.android.http.AndroidHttp;
 import com.google.api.client.googleapis.json.GoogleJsonResponseException;
 import com.google.api.client.http.HttpTransport;
@@ -73,6 +76,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
+
+import static com.android.volley.toolbox.Volley.newRequestQueue;
 
 public class MainActivity extends AppCompatActivity {
     private static final String CLOUD_VISION_API_KEY = " AIzaSyDGS_DRiMBwXN3ijn68vCe7NoQ-8bcRuL0 ";
@@ -343,7 +348,39 @@ public class MainActivity extends AppCompatActivity {
         if (labels != null) {
             for (EntityAnnotation label : labels) {
                 message += String.format(Locale.US, "<b>%s</b>", label.getDescription());
-                message += "<br /><br /><big><b>Bottle</b></big><br /><i>/bot-l/</i><br />A portable container for holding liquids, characteristically having a neck and mouth and made of glass or plastic.";
+
+                // Instantiate the RequestQueue.
+                RequestQueue queue = newRequestQueue(this);
+                String url = "https://en.wikipedia.org/wiki/" + label.getDescription();
+
+                // Request a string response from the provided URL.
+                StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
+                        new Response.Listener<String>() {
+                            @Override
+                            public void onResponse(String response) {
+                                String usedString = response.substring(response.indexOf("<p>"), response.indexOf("<h2>Contents</h2>"));
+                                String word = usedString.substring(usedString.indexOf("<b>") + 3, usedString.indexOf("</b>"));
+                                word = (word.charAt(0) + "").toUpperCase() + word.substring(1);
+                                String toWrite = "<h1>" + word + "</h1>";
+                                int index = 0;
+                                int i;
+                                while ((i = usedString.indexOf("<sup", index)) > 0) {
+                                    toWrite += usedString.substring(index, i);
+                                    index = usedString.indexOf("</sup>", i) + 6;
+                                }
+                                toWrite += usedString.substring(index);
+                                mImageDetails.append(Html.fromHtml(toWrite.replaceAll("<a[^>]*>", "").replaceAll("</a>" , "")));
+                            }
+                        }, new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+
+                    }
+                });
+                // Add the request to the RequestQueue.
+                queue.add(stringRequest);
+
+                message += "<br /><br />"; //<big><b>Bottle</b></big><br /><i>/bot-l/</i><br />A portable container for holding liquids, characteristically having a neck and mouth and made of glass or plastic.";
                 break;
             }
         } else {
